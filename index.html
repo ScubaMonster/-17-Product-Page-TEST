@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby Subscription Service</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
 
-  <body>
-    <header id="header">Hyperfixation Bin</header>
-        <nav id="nav-bar">
-            <ul>
-                <li><a class="nav-bar" href="./yarn.html">Yarn Hobbies</a></li>
-                <li><a class="nav-bar" href="./thread.html">Thread Hobbies</a></li>
-                <li><a class="nav-bar" href="./sewing.html">Sewing Hobbies</a></li>
-                <li><a class="nav-bar" href="./painting.html">Painting Hobbies</a></li>
-                <li><a class="nav-bar" href="./stationery.html">Stationery Hobbies</a></li>
-            </ul>
-        </nav>
-    <main>
-        <h1>Get your new hyperfixation here!</h1>
-        <h2>Coming Soon!</h2>
-        <p>Register your interest.</p>
-        <form name="registration" netlify>
-          <label for="email">Email
-            <input type="email" id="email" name="email" required>
-          </label>
-          <input type="submit">
-        </form>
-        <p>Picking out new hyperfixations can be hard to fit into our busy mind! Test our expert team of neurodivergent nerds to pick out a brand new (used) hobby with a new equipment box coming to your door every month</p>
-    </main>
-    <footer></footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobby Subscription Service</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header id="header">Hyperfixation Bin
+    <img id="header-img" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="logo">
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-bar" href="./yarn.html">Yarn Hobbies</a></li>
+        <li><a class="nav-bar" href="./thread.html">Thread Hobbies</a></li>
+        <li><a class="nav-bar" href="./sewing.html">Sewing Hobbies</a></li>
+        <li><a class="nav-bar" href="./painting.html">Painting Hobbies</a></li>
+        <li><a class="nav-bar" href="./stationery.html">Stationery Hobbies</a></li>
+        <li><a class="nav-bar" href="#footer">About us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Get your new hyperfixation here!</h1>
+    <video src="" id="video"></video>
+    <h2>Coming Soon!</h2>
+    <p>Register your interest.</p>
+    <form name="form" action="https://www.freecodecamp.org/email-submit" method="post" netlify>
+      <label for="email">Email
+        <input type="email" id="email" name="email" placeholder="Enter your email"
+          pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+      </label>
+      <input type="submit">
+    </form>
+    <p>Picking out new hyperfixations can be hard to fit into our busy mind! Test our expert team of neurodivergent
+      nerds to pick out a brand new (used) hobby with a new equipment box coming to your door every month</p>
+  </main>
+  <footer></footer>
+</body>
 
 
 
