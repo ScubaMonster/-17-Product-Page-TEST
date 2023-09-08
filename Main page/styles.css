@@ -4,57 +4,77 @@
     }
 }
 
+:root{
+    --light: #f1faee;
+    --color-1: #307473;
+    --color-2: #1e1e24;
+    --second: #98528d;
+    --accent-1: #b887b0;
+    --accent-2: #a8dadc;
+    
+}
+
 body {
-    background: #f5f6f7;
-    color: #1b1b32;
+    background: var(--light);
+    color: var(--color-2);
     font-family: Helvetica;
     margin: 0;
 }
 
 header {
     width: 100%;
-    height: 50px;
-    background-color: #1b1b32;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 80px;
+    background-color: var(--second);
     position: fixed;
     top: 0;
+    left: 0;
+    
 }
 
 #header-img {
-    width: max(100px, 18vw);
-    background-color: #0a0a23;
-    aspect-ratio: 35 / 4;
-    padding: 0.4rem;
+    width: max(100px, 10vw);
+    height: auto;
+    position: relative;
+    float: left;
+    top: 10px;
 }
+
+h1 {
+    top: 20px;
+    left: 200px;
+    position: relative;
+    color: var(--light);
+    font-size: min(5vw, 1.2em);
+    position: absolute;
+  }
 
 nav {
     width: 50%;
     max-width: 300px;
     height: 50px;
+    position: relative;
+    top: 5px;
+    float: right;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 nav>ul {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
     padding-inline-start: 0;
     margin-block: 0;
     height: 100%;
 }
 
 nav>ul>li {
-    color: #dfdfe2;
+    color: var(--light);
     margin: 0 0.2rem;
     padding: 0.2rem;
     display: block;
 }
 
 nav>ul>li:hover {
-    background-color: #dfdfe2;
-    color: #1b1b32;
+    background-color: var(--accent-2);
+    color: var(--color-2);
     cursor: pointer;
 }
 
@@ -65,33 +85,38 @@ li>a {
 
 main {
     padding-top: 50px;
+    margin-top: 80px;;
 }
 
-h1 {
-    color: #f1be32;
-    font-size: min(5vw, 1.2em);
-    text-align: center;
-  }
-
-h1,
-h2 {
-  font-family: Verdana, Tahoma;
+section{
+    width: auto;
 }
 
+.first{
+    background-color: var(--light);
+    height: 50vh;
+}
+
+.second{
+    background-color: var(--color-1);
+    height: 50vh;
+}
+
+.third{
+    background-color: var(--color-2);
+    height: 50vh;
+    color: var(--light);
+}
+
+
+
 h2 {
-  border-bottom: 4px solid #dfdfe2;
   margin-top: 0px;
   padding-top: 60px;
 }
 
 p {
     margin-top: 5px;
-    padding-left: 15px;
     font-size: 20px;
   }
 
-footer {
-    background-color: #2a2a40;
-    display: flex;
-    justify-content: center;
-  }

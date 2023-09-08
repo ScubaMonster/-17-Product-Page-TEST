@@ -9,36 +9,48 @@
 </head>
 
 <body>
-  <header id="header">Hyperfixation Bin
-    <img id="header-img" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="logo">
+  <header id="header">
+    <h1>Good Hobbies, Inc.</h1>
+    <img id="header-img" src="/Aspa_logo_389x258.png" alt="logo">
+    
     <nav id="nav-bar">
       <ul>
-        <li><a class="nav-bar" href="./yarn.html">Yarn Hobbies</a></li>
-        <li><a class="nav-bar" href="./thread.html">Thread Hobbies</a></li>
-        <li><a class="nav-bar" href="./sewing.html">Sewing Hobbies</a></li>
-        <li><a class="nav-bar" href="./painting.html">Painting Hobbies</a></li>
-        <li><a class="nav-bar" href="./stationery.html">Stationery Hobbies</a></li>
-        <li><a class="nav-bar" href="#footer">About us</a></li>
+        <li><a class="nav-bar" href="#list">Hobby List</a></li>
+        <li><a class="nav-bar" href="#bundles">Hyperfixation Bundles</a></li>
+        <li><a class="nav-bar" href="#contact">Contact Us</a></li>
       </ul>
     </nav>
   </header>
   
   <main>
-    <h1>Get your new hyperfixation here!</h1>
-    <video src="" id="video"></video>
-    <h2>Coming Soon!</h2>
-    <p>Register your interest.</p>
-    <form name="form" action="https://www.freecodecamp.org/email-submit" method="post" netlify>
-      <label for="email">Email
-        <input type="email" id="email" name="email" placeholder="Enter your email"
-          pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
-      </label>
-      <input type="submit">
-    </form>
-    <p>Picking out new hyperfixations can be hard to fit into our busy mind! Test our expert team of neurodivergent
+    <section class="first" id="list">
+      <h2>Coming Soon!</h2>
+      <p>Picking out new hyperfixations can be hard to fit into our busy mind! Test our expert team of neurodivergent
       nerds to pick out a brand new (used) hobby with a new equipment box coming to your door every month</p>
+      <video src="" id="video"></video>
+      <button>Give Me Hobbies!</button>
+    </section>
+
+    <section class="second" id="bundles">
+      <h2>Coming Soon!</h2>
+      <p>Register your interest.</p>
+      <a href="#email-submit" >Build your hyperfixation bin</a>
+    </section>
+
+    <section class="third" id="contact">
+      <h2>Ready to relax?</h2>
+      <p>Register Now</p>
+      <form name="form" action="https://www.freecodecamp.org/email-submit" method="post" netlify>
+        <label for="email">Email
+          <input type="email" id="email" name="email" placeholder="Enter your email"
+          pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+        </label>
+        <input type="submit" id="email-submit">
+      </form>
+  </section>
+   
   </main>
-  <footer></footer>
+  
 </body>
 
 
